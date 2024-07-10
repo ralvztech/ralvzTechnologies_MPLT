@@ -1,0 +1,13 @@
+Flask
+beautifulsoup4
+bs4
+certifi
+chardet
+idna
+requests
+soupsieve
+urllib3
+phonenumbers
+folium
+geocoder
+opencage
