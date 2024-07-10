@@ -1,0 +1,10 @@
+*.venv
+*.env
+VENV/
+ENV/
+venv/
+env/
+*.log
+log/
+*.py
+*.js
