@@ -1,11 +1,10 @@
-#!/usr/bin/python3
 import phonenumbers
 from phonenumbers import geocoder
 from phonenumbers import carrier
 import opencage
 from opencage.geocoder import OpenCageGeocode
 import folium
-from flask import Flask
+from flask import Flask, render_template
 
 """Starts a Flask Web Application"""
 
@@ -13,6 +12,7 @@ app = Flask(__name__)
 
 
 @app.route("/")
+@app.route("/home")
 def home():
     return 'home.html'
 
