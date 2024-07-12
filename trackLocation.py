@@ -14,17 +14,17 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/home")
 def home():
-    return 'home.html'
+    return render_template('home.html')
 
 
 @app.route("/about")
 def about():
-    return 'about.html'
+    return render_template('about.html')
 
 
 @app.route("/location")
 def location():
-    return 'location.html'
+    return render_template('location.html')
 
 
 key = "ad6e7ced7e414f06b0d2351b9ab15c77" #Geocoder API Key needs to paste here "your key" 
@@ -49,7 +49,7 @@ print(lat,lng)
 my_map = folium.Map(location=[lat,lng], zoom_start=9)
 folium.Marker([lat, lng], popup= location).add_to(my_map)
 
-my_map.save("location.html")
+my_map.save("templates/location.html")
 
 print("location tracking completed")
 
