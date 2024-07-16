@@ -4,6 +4,7 @@ from phonenumbers import carrier
 import opencage
 from opencage.geocoder import OpenCageGeocode
 import folium
+
 from flask import Flask, render_template
 
 """Starts a Flask Web Application"""
@@ -25,7 +26,6 @@ def about():
 @app.route("/location")
 def location():
     return render_template('location.html')
-
 
 key = "ad6e7ced7e414f06b0d2351b9ab15c77" #Geocoder API Key needs to paste here "your key" 
 number = input("please enter your number: ")
